@@ -192,11 +192,11 @@ static void blink_task(void *arg)
     {
         // Turn LED on
         gpio_set_level(BLINK_GPIO, 1);
-        vTaskDelay(BLINK_TICKS);
+        vTaskDelay(BLINK_PULSE_TICKS);
 
         // Turn LED off
         gpio_set_level(BLINK_GPIO, 0);
-        vTaskDelay(BLINK_TICKS);
+        vTaskDelay(BLINK_PULSE_TICKS);
     }
 }
 
@@ -221,7 +221,7 @@ void blink_pattern_task(void *pvParameter)
         }
 
         // Extra gap after completing the sequence
-        vTaskDelay(blink_count * (BLINK_PULSE_TICKS + BLINK_BREAK_TICKS));
+        vTaskDelay(blink_count * (BLINK_BREAK_TICKS));
     }
 }
 
