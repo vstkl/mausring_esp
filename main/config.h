@@ -6,7 +6,7 @@
 #define STATS_TASK_PRIO 3
 #define STATS_TICKS pdMS_TO_TICKS(1000)
 #define BLINK_TICKS pdMS_TO_TICKS(100)
-#define BLINK_PULSE_TICKS pdMS_TO_TICKS(900)
+#define BLINK_PULSE_TICKS pdMS_TO_TICKS(100)
 #define BLINK_BREAK_TICKS pdMS_TO_TICKS(1000)
 #define ARRAY_SIZE_OFFSET 5 // Increase this if print_real_time_stats returns ESP_ERR_INVALID_SIZE
 

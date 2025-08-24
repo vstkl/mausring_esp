@@ -507,7 +507,7 @@ CONFIG_IDF_TARGET_ARCH="xtensa"
 # default:
 CONFIG_IDF_TARGET="esp32"
 # default:
-CONFIG_IDF_INIT_VERSION="$IDF_INIT_VERSION"
+CONFIG_IDF_INIT_VERSION="5.5.0"
 # default:
 CONFIG_IDF_TARGET_ESP32=y
 # default:
@@ -577,7 +577,7 @@ CONFIG_BOOTLOADER_LOG_LEVEL=3
 #
 # Format
 #
-CONFIG_BOOTLOADER_LOG_COLORS=y
+# CONFIG_BOOTLOADER_LOG_COLORS is not set
 CONFIG_BOOTLOADER_LOG_TIMESTAMP_SOURCE_CPU_TICKS=y
 # end of Format
 
@@ -756,6 +756,18 @@ CONFIG_COMPILER_ORPHAN_SECTIONS_WARNING=y
 
 #
 # Component config
+#
+
+#
+# !!! MINIMAL_BUILD is enabled !!!
+#
+
+#
+# Only common components and those transitively required by the main component are listed
+#
+
+#
+# If a component configuration is missing, please add it to the main component's requirements
 #
 
 #
