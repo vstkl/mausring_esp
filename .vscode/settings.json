@@ -4,5 +4,8 @@
   "idf.toolsPath": "/opt/esp/idf/tools",
   "idf.pythonInstallPath": "/usr/bin/python3",
   "idf.port": "/dev/ttyUSB0",
-  "idf.flashType": "UART"
+  "idf.flashType": "UART",
+  "files.associations": {
+    "config.h": "c"
+  }
 }
