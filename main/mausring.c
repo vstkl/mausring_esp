@@ -19,6 +19,7 @@
 
 #include "config.h" 
 
+#include "pinout.h"
 
 static char task_names[NUM_OF_SPIN_TASKS][configMAX_TASK_NAME_LEN];
 static SemaphoreHandle_t sync_spin_task;
